@@ -1,0 +1,163 @@
+.all-tours-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+}
+
+/* ===== Section Header ===== */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 12px 0;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Slider Container ===== */
+.all-tours-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ===== Scrollable Cards ===== */
+.all-tours-grid {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 4px 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.all-tours-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each card wrapper */
+.all-tours-card-wrapper {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+/* ===== Arrow Buttons ===== */
+.all-tours-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  color: #1e293b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.all-tours-arrow:hover {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}
+
+.all-tours-arrow svg {
+  display: block;
+}
+
+/* ===== Footer Text ===== */
+.section-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.explore-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.explore-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Pagination ===== */
+.all-tours-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.all-tours-page-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #475569;
+}
+
+.all-tours-page-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.all-tours-page-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all-tours-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .all-tours-card-wrapper {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-tours-arrow {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}

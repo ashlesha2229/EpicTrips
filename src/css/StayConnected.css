@@ -1,0 +1,133 @@
+.stay-connected {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 70px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  font-family: Roboto, sans-serif;
+}
+
+.stay-connected-left {
+  flex: 0 0 360px;
+}
+
+.stay-connected-left h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  margin: 0 0 18px 0;
+}
+
+.stay-connected-left p {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #6b7280;
+  margin: 0 0 30px 0;
+}
+
+.subscribe-btn {
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Map Area */
+.stay-connected-right {
+  flex: 1;
+  position: relative;
+  height: 360px;
+}
+
+.map-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://raw.githubusercontent.com/djaiss/mapsicon/master/world/world-map-dotted.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+/* Flag pins */
+.flag {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -100%);
+  z-index: 5;
+}
+
+.flag img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
+  background: #fff;
+}
+
+.flag::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 9px;
+  height: 9px;
+  background: #3b82f6;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Exact positions from the design */
+.flag-uk      { top: 16%; left: 27%; }
+.flag-usa     { top: 30%; left: 47%; }
+.flag-ph      { top: 20%; left: 81%; }
+.flag-laos    { top: 57%; left: 37%; }
+.flag-si      { top: 50%; left: 61%; }
+.flag-kr      { top: 53%; left: 87%; }
+
+/* Dashed lines (SVG) */
+.map-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stay-connected {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .stay-connected-left {
+    flex: none;
+    max-width: 450px;
+  }
+
+  .stay-connected-right {
+    width: 100%;
+    height: 300px;
+  }
+}

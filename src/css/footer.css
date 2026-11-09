@@ -1,0 +1,338 @@
+.ftr {
+  width: 100%;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 55px 6% 45px;
+  box-sizing: border-box;
+  gap: 40px 30px;
+}
+
+.box-1 {
+  flex: 1.5;
+  min-width: 240px;
+}
+
+.box-2 {
+  flex: 1;
+  min-width: 150px;
+}
+
+.contact-box {
+  flex: 1.2;
+  min-width: 220px;
+}
+
+/* Logo */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.logodesign {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.logo-section b {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  letter-spacing: -0.3px;
+}
+
+/* Description */
+.content span {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #a5a5a5;
+  margin: 0;
+  display: block;
+  max-width: 280px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  border-color: #fff;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Column Titles */
+.box-2 h4,
+.contact-box .hd {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+/* Links */
+.box-2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box-2 ul li {
+  color: #a5a5a5;
+  font-size: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.box-2 ul li:hover {
+  color: #ffffff;
+}
+
+/* Contact Info */
+.hd-2 {
+  color: #a5a5a5;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.hd-3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.email-icon {
+  color: #a5a5a5;
+  font-size: 15px;
+}
+
+.hd-4 {
+  color: #a5a5a5;
+  font-size: 14px;
+}
+
+/* App Store Buttons */
+.app-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s ease;
+  min-width: 140px;
+}
+
+.app-btn:hover {
+  background: #252525;
+  border-color: #555;
+}
+
+.store-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.btn-text .small {
+  font-size: 10px;
+  color: #bbb;
+  font-weight: 400;
+}
+
+.btn-text .big {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+/* ========== Bottom Bar ========== */
+.footer-bottom {
+  background-color: #0f0f0f;
+  border-top: 1px solid #2a2a2a;
+  padding: 18px 6%;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bottom-content p {
+  margin: 0;
+  color: #888;
+  font-size: 13.5px;
+}
+
+.bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13.5px;
+}
+
+.bottom-links a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.bottom-links a:hover {
+  color: #fff;
+}
+
+.bottom-links span {
+  color: #555;
+}
+
+/* ========== Responsive ========== */
+
+/* Tablets */
+@media (max-width: 1000px) {
+  .ftr {
+    padding: 50px 4% 40px;
+    gap: 35px 25px;
+  }
+
+  .box-1 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .content span {
+    max-width: 100%;
+  }
+
+  .box-2,
+  .contact-box {
+    flex: 1 1 40%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .ftr {
+    flex-direction: column;
+    padding: 40px 20px 30px;
+    gap: 35px;
+  }
+
+  .box-1,
+  .box-2,
+  .contact-box {
+    flex: 1 1 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .logo-section b {
+    font-size: 24px;
+  }
+
+  .box-2 h4,
+  .contact-box .hd {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .box-2 ul li {
+    font-size: 13.5px;
+    margin-bottom: 11px;
+  }
+
+  .hd-3 {
+    font-size: 18px;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .ftr {
+    padding: 35px 16px 25px;
+  }
+
+  .logo-section {
+    gap: 10px;
+  }
+
+  .logodesign {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-section b {
+    font-size: 22px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
